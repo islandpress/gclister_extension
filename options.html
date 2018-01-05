@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <title>Options</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="options">
+    <form>
+        <ul>
+            <li>
+                <label>
+                    Generate and view access/secret key pairs <a href="https://greencommons.net/profile" target="_blank">here</a>
+                </label>
+                <br>
+                <label for="accesskey">
+                    Access Key
+                </label>
+                <input id="accesskey" type="text" />
+                <label for="accesskey">
+                    Secret Key
+                </label>
+                <input id="secretkey" type="text" />
+                <br>
+                <br>
+                <label>
+                    View your lists <a href="https://greencommons.net/lists" target="_blank">here</a>
+                </label>
+                <br>
+                <label for="listurl">
+                    Target list URL (example: https://greencommons.net/lists/102)
+                </label>
+                <input id="listurl" type="text" />
+                <label id="listname"></label>
+            </li>
+            <br>
+            <br>
+            <li>
+                <button id="save">Save</button>
+            </li>
+        </ul>
+    </form>
+    <div id="status"></div>
+    <script src="jquery-2.0.2.min.js"></script>
+    <script src="client.js"></script>
+    <script src="options.js"></script>
+</body>
+</html>

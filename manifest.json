@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+
+    "name": "GC Lister",
+    "description": "This extension will let you add a link to a list on the Green Commons.",
+    "version": "1.0",
+    "options_page": "options.html",
+
+    "permissions": [
+	"https://api.trello.com/",
+	"https://greencommons.net/lists/",
+	"https://api.greencommons.net/",
+	"tabs"
+    ],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "web_accessible_resources":["options.html"],
+    "content_security_policy": "script-src 'self' https://api.trello.com; object-src 'self'"
+}
